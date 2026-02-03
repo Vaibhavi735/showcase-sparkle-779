@@ -3,7 +3,7 @@ import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 const skillCategories = [
   {
     title: 'Frontend',
-    skills: ['HTML', 'CSS', 'JavaScript', 'React'],
+    skills: ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'React', 'Responsive Web Design'],
     color: 'from-primary to-cyan-400',
   },
   {
@@ -13,17 +13,17 @@ const skillCategories = [
   },
   {
     title: 'Databases',
-    skills: ['MongoDB', 'PostgreSQL'],
+    skills: ['MySQL', 'SQL', 'Database Design'],
     color: 'from-glow-pink to-pink-400',
   },
   {
     title: 'Tools',
-    skills: ['Git', 'Docker', 'AWS'],
+    skills: ['Git', 'GitHub', 'VS Code'],
     color: 'from-green-500 to-emerald-400',
   },
   {
     title: 'AI Tools',
-    skills: ['ChatGPT', 'GitHub Copilot'],
+    skills: ['Python', 'TensorFlow', 'Keras', 'CNNs'],
     color: 'from-orange-500 to-amber-400',
   },
 ];
