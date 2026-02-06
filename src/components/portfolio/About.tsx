@@ -39,7 +39,7 @@ const About = () => {
             <div className="flex justify-center lg:order-1">
               <div className="relative">
                 <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden glass p-2">
-                  <img src="https://image2url.com/r2/default/images/1770362215985-bcd1b2f8-33ca-4d61-845d-016a3586b473.jpeg" alt="Vaibhavi V Naragund" className="w-full h-full object-cover rounded-xl" />
+                  
                 </div>
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-30 -z-10" />
               </div>
