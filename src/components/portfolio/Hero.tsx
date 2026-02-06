@@ -1,16 +1,17 @@
 import { ArrowDown, MapPin, Briefcase } from 'lucide-react';
 import { useTypingEffect } from '@/hooks/useTypingEffect';
-
 const Hero = () => {
   const typedText = useTypingEffect(['Developer'], 100, 50, 3000);
-
-  return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center hero-gradient overflow-hidden">
+  return <section id="hero" className="relative min-h-screen flex items-center justify-center hero-gradient overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
-        <div className="absolute top-1/2 right-1/3 w-64 h-64 bg-glow-pink/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }} />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-float" style={{
+        animationDelay: '2s'
+      }} />
+        <div className="absolute top-1/2 right-1/3 w-64 h-64 bg-glow-pink/10 rounded-full blur-3xl animate-float" style={{
+        animationDelay: '4s'
+      }} />
       </div>
 
       <div className="container mx-auto px-4 md:px-6 pt-20 relative z-10">
@@ -51,16 +52,10 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
-              <a
-                href="#contact"
-                className="px-8 py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-primary-foreground font-medium transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 hover:scale-105"
-              >
+              <a href="#contact" className="px-8 py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-primary-foreground font-medium transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 hover:scale-105">
                 Get in Touch
               </a>
-              <a
-                href="#projects"
-                className="px-8 py-3 rounded-full glass border border-primary/30 text-foreground font-medium transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/10"
-              >
+              <a href="#projects" className="px-8 py-3 rounded-full glass border border-primary/30 text-foreground font-medium transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/10">
                 View Projects
               </a>
             </div>
@@ -70,13 +65,7 @@ const Hero = () => {
           <div className="flex-shrink-0">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-primary via-secondary to-glow-pink rounded-full blur-2xl opacity-40 animate-glow-pulse" />
-              <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden gradient-border p-1">
-                <img
-                  src="https://image2url.com/r2/default/images/1770125919294-7032eb2c-7aac-4e25-83cd-07b88e7fde90.jpeg"
-                  alt="Vaibhavi V Naragund"
-                  className="w-full h-full object-cover rounded-full"
-                />
-              </div>
+              
             </div>
           </div>
         </div>
@@ -87,8 +76,6 @@ const Hero = () => {
           <ArrowDown className="w-5 h-5 text-primary" />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
