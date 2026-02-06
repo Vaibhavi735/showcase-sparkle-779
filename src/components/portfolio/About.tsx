@@ -39,7 +39,11 @@ const About = () => {
             <div className="flex justify-center lg:order-1">
               <div className="relative">
                 <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden glass p-2">
-                  
+                  <img 
+                    src="https://image2url.com/r2/default/images/1770362215985-bcd1b2f8-33ca-4d61-845d-016a3586b473.jpeg" 
+                    alt="Profile" 
+                    className="w-full h-full object-cover rounded-xl"
+                  />
                 </div>
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-30 -z-10" />
               </div>
@@ -66,19 +70,23 @@ const About = () => {
                 </div>
               </div>
             </div>
+          </div>
 
-            {/* Highlight Cards */}
-            <div className="grid grid-cols-2 gap-4">
-              {highlights.map((item, index) => <div key={item.label} className="glass p-6 group hover:border-primary/50 transition-all duration-300" style={{
-              animationDelay: `${index * 100}ms`
-            }}>
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <item.icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <h3 className="font-semibold text-foreground mb-1">{item.label}</h3>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
-                </div>)}
-            </div>
+          {/* Highlight Cards - Full width row below */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+            {highlights.map((item, index) => (
+              <div 
+                key={item.label} 
+                className="glass p-6 group hover:border-primary/50 transition-all duration-300" 
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <item.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-semibold text-foreground mb-1">{item.label}</h3>
+                <p className="text-sm text-muted-foreground">{item.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
