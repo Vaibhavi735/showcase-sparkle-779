@@ -26,7 +26,7 @@ const CTA = () => {
             </h2>
 
             <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
-              Currently looking for entry-level opportunities and internships where I can contribute my skills in frontend development and data analysis.
+              Currently looking for entry-level opportunities and internships where I can contribute my skills in frontend development.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4">
