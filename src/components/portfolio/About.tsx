@@ -1,13 +1,13 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { Code2, Database, Lightbulb, Users } from 'lucide-react';
+import { Code2, Lightbulb, Users, Rocket } from 'lucide-react';
 const highlights = [{
   icon: Code2,
   label: 'Frontend Focus',
   description: 'Building responsive UIs'
 }, {
-  icon: Database,
-  label: 'Data Analysis',
-  description: 'Extracting insights'
+  icon: Rocket,
+  label: 'Fast Learner',
+  description: 'Quickly adapting to new tech'
 }, {
   icon: Lightbulb,
   label: 'Problem Solver',
