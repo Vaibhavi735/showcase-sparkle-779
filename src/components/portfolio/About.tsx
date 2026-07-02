@@ -65,7 +65,7 @@ const About = () => {
                   <div className="text-sm text-muted-foreground">Degree</div>
                 </div>
                 <div className="glass p-6 text-center">
-                  <div className="text-3xl font-bold gradient-text mb-1">7.72</div>
+                  <div className="text-3xl font-bold gradient-text mb-1">7.87</div>
                   <div className="text-sm text-muted-foreground">CGPA</div>
                 </div>
               </div>
