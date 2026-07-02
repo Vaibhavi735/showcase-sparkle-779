@@ -1,13 +1,13 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { Code2, Database, Lightbulb, Users } from 'lucide-react';
+import { Code2, Lightbulb, Users, Rocket } from 'lucide-react';
 const highlights = [{
   icon: Code2,
   label: 'Frontend Focus',
   description: 'Building responsive UIs'
 }, {
-  icon: Database,
-  label: 'Data Analysis',
-  description: 'Extracting insights'
+  icon: Rocket,
+  label: 'Fast Learner',
+  description: 'Quickly adapting to new tech'
 }, {
   icon: Lightbulb,
   label: 'Problem Solver',
@@ -48,10 +48,10 @@ const About = () => {
             {/* About Text */}
             <div className="space-y-6 lg:order-0">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I am a developer focused on frontend development and data analysis. I enjoy building clean and responsive user interfaces and working with data to find useful insights.
+                I am a developer focused on frontend development. I enjoy building clean and responsive user interfaces that are easy for users to understand and use.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I like turning data into clear visuals and simple solutions that are easy for users to understand. I am continuously learning and improving my skills, and I am looking for opportunities where I can contribute to frontend development while applying a data-driven approach to problem solving.
+                I am continuously learning and improving my skills, and I am looking for opportunities where I can contribute to frontend development and grow as a developer.
               </p>
 
               {/* Stats */}
